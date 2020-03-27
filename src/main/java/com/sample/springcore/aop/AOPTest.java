@@ -12,9 +12,11 @@ public class AOPTest {
 /*
         employeeService.getEmployeeName();
         employeeService.getEmployeeNumber();
-        employeeService.getPassedNameAndNumber("test", 1235);
 */
-        employeeService.getAfterEmployeeName();
+/*        employeeService.getAfterEmployeeName();*/
+        employeeService.getPassedNameAndNumber("test", 1235);
+        //System.out.println(":::::::::Seperator:::::::::");
+        //employeeService.getPassedNameAndNumber("test", 123);
         context.close();
     }
 
