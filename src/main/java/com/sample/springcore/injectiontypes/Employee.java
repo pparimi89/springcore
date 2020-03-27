@@ -6,7 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Employee {
 
+    @Autowired(required = false)
     Student student;
+
     WorkLocation workLocation;
 
 
@@ -14,7 +16,7 @@ public class Employee {
         this.workLocation = workLocation;
     }
 
-    @Autowired(required = false)
+
     public void setStudent(final Student student){
         this.student = student;
     }
