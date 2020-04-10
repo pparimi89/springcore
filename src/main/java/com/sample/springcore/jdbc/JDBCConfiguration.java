@@ -5,6 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
@@ -31,6 +32,12 @@ public class JDBCConfiguration {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource());
         return jdbcTemplate;
+    }
+
+    @Bean
+    public NamedParameterJdbcTemplate namedParameterJdbcTemplate(){
+        final NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource());
+        return namedParameterJdbcTemplate;
     }
 
 }
