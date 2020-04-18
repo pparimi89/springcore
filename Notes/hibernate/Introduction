@@ -1,0 +1,29 @@
+Introduction:
+   what is hibernate framework and their moto:
+        It is a framework that is used for talking to database in a better way.
+        It provides Object oriented touch to the database layer from the application.
+  Benefits hibernate framework provides:
+      It provides HQL(Hibernate Query language) where the native query generation is taken care by hibernate framework, due to this
+      the changing of databases doesn't require any query changes in the application. (It uses dialect to generate the particular native
+      query related to the database).
+      It handles all low level SQL.
+      It provides caching mechanism.
+      it provides entity(POJO) and database objects mapping using hibernate framework(Object-to-Relation mapping)ORM.
+      It has annotation support.
+      It can provide the pagination feature in a very simpler manner.
+
+class level annotations:
+@Entity - This actually makes your class as entity class.
+@Table - The place where we provide database table name that should get mapped to the entity.
+Field level annotations:
+@Id -   This is mandatory annotation that should present in entity or POJO. This represents identifier.
+@Column - this maps with the database table column.
+
+-> We will have a configuration file "hibernate.cfg.xml"
+     Inside this file we will have configurations that are needed to connect the database.
+     The properties that are present are dialect, databaseURL, username, pwd, driver class.
+
+The configuration file will be loaded by using a hibernate config loader class "ServiceRegistry"
+
+
+

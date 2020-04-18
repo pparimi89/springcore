@@ -1,0 +1,38 @@
+AOP:
+    - AOP stands Aspect oriented programming
+    - This is programming paradigm, it aims to increase the speration of cross cutting concerns,
+    it does so by adding the additional behaviour to existing code without modifying the code itself.
+    Ex:
+    class Test{
+       public void test1(){
+         log("::inside test1")
+         test2(a, b);
+         //functionality
+       }
+
+      public void test2(int a, int b){
+         log("::inside test2")
+             test3();
+         //functionality
+      }
+
+    }
+
+    Here we can pull out the logs that was added to a seperate module i.e into an Aspect class.
+
+Aspect:
+   Breaking of code into different modules is known as modularization, An aspect is basic key unit of module.
+
+joinPoint:(it is part of execution(function) of program) / (the points of program where your aspects should execute).
+
+pointcut: Its a predicate or expression that matches the joinpoints.
+
+Advice: under your matched pointcut expression this provides info saying where the aspect should get applied.
+     Before your method execution starts @Before.
+     after your method returns value @After.
+     Before your method execution starts and after your method returns value , this can be stated as @Around.
+
+     @AfterReturning: This advice will give the control over the result returned by the joinpoint.
+     @AfterThrowing: This advice will give the control over the exception that was thrown by the joinpoint.
+
+     Custom Annotation.

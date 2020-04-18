@@ -10,5 +10,9 @@
         <property name="hibernate.connection.password">admin</property>
 
         <mapping class="com.sample.hibernate.entity.Customer"></mapping>
+        <mapping class="com.sample.hibernate.entity.onetoone.Employee"></mapping>
+        <mapping class="com.sample.hibernate.entity.onetoone.Address"></mapping>
+        <mapping class="com.sample.hibernate.entity.onetomany.Account"></mapping>
+        <mapping class="com.sample.hibernate.entity.onetomany.Cust"></mapping>
     </session-factory>
 </hibernate-configuration>

@@ -1,0 +1,28 @@
+one to one relation
+    Employee   |      address
+    -----------  ---------------
+    eid        |      aid
+    ename      |      city
+    esal       |      state
+    addr_id
+
+create table address(aid serial primary key, city varchar(50), state varchar(50))
+create table employee(eid serial primary key, ename varchar(50), esal integer, addr_id integer references address(aid))
+
+one to Many relation
+  One employee can have multiple accounts
+
+    customer   |      account
+    -----------  ---------------
+    cid        |      aid
+    name       |      name
+    sal        |      bank
+               |      empl_id
+
+create table cust(cid serial primary key, name varchar(50), sal varchar(50))
+create table account(aid serial primary key, name varchar(50), bank varchar, cust_id integer references cust(cid))
+
+
+Many to one relation
+
+Many to many relation

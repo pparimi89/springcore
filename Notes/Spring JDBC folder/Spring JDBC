@@ -1,0 +1,11 @@
+Spring JDBC:
+    It eliminates lot of boiler plate of code , such as opening/closing of connection, handling of exceptions,
+       it makes us the code looks smoother and readable
+    For Spring JDBC we have to provide some basic details to make the connection to DB instance.
+       -> Driver
+       -> URL
+       -> UserName
+       -> password
+  Spring JDBC has classes that has the ability to interact with databases and provide us the desired data result.
+  One of such class is JDBCTemplate.
+

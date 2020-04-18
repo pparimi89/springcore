@@ -1,0 +1,6 @@
+transiant state
+    At the time of creation of object, the state is transient
+Persistant state
+    When we attach object to the session
+Detached state.
+    when the object comes out of session.

@@ -1,0 +1,49 @@
+Tools going to use.
+---------------------
+Jdk12, Intellij IDE, maven 3, postgressql or Inmemory database, Git, Postman
+
+Course Structure:
+---------------------------------------------------------------
+Spring Core. - 8 or 9 classes
+   - Dependency injection(Annotation based)
+   - Bean scopes and life a bean.
+   - AOP(important**)  
+
+Spring Rest: 2 classes
+      - we will see spring restful service app
+
+4 classes	  
+- Introduction to JPA with hibernate implemenration
+
+2 classes
+- Introduction to SOAP, RESTful, and SOAP vs RESTful.
+
+
+10 classes
+Spring Boot.
+    - we start with simple hello world webapp using Sprinboot
+	
+   What are all various HTTP methods we have, and what is the differences, which screnarios they should be used.
+   Exception Handling for single rewsaouce and handling it globally
+   Validations for the input data we pass in request.
+   Internationalization
+   Swagger(To provide documenation for the API's)
+   Actuators.
+	 
+
+Add JPA with spring boot app. (2  classes)  
+Spring Boot security. (2 classes)
+
+7 Classes
+  -> Spring Cloud :
+		The chanllanges we face with microservices architecture
+		Intro to cloud
+		Spring cloud config server
+		Intro ZUUL, Zipkin
+		Intro hystrix.
+	
+-> log4j, design patrtern
+
+Guidence aboout how to learn:
+---------------------------------------
+Data structures(how to practice and learn).

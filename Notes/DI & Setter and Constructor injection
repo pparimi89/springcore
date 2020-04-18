@@ -1,0 +1,129 @@
+Today Agenda:
+-----------------
+1. Spring Intro -- Advantages.
+2. Various modules in Spring
+3. inversion of control.
+4. Dependencyt injection.
+5. Coding sample using DI
+
+Spring Intro:
+    - Rod Johnson developed spring project in 2002.
+	- Spring 1.0
+	- later it was acquired by Pivotal.
+	
+Spring 5.
+
+Advantages:
+------------
+  - Its a lightweight...(It can run as standalone, without the help of server)
+  - Ease of testability.(by using IOC and DI)
+  - Transaction management internally(query - execute all or execute none)
+  - Instrumentation - Dynamically you can inject byte code into another 
+  - It has library support to MVC called spring MVC
+  - It has JDBC and ORM support
+  
+MVC - model, view, controller
+model - Business logic
+View - View
+Controller - 
+  - We will having more community support.
+----------------------------------
+Diadvantage - Learning Curve.
+
+--------------------------------------------------------
+Various Modules in spring.
+ - Database(JDBC, ORM)
+ - Web - Spring MVC.
+ - AOP(Aspect oriented programming)
+ - Core Platform(IOC and DI)
+
+Inversion Of Control:- 
+     .You have some piece of code, you addedd some support from libraries   
+     .You will have some framework, you provide your piece of code to framework.
+- Instead of we taking on control of code, some framework provides takes control to you code.
+
+- i have a query.
+  - DataSource - Url, dbname, username, pwd
+My framework will take care of creating connection, execting query and closing the connection.
+
+
+Dependency Injection:
+----------------------
+   - Injecting a dependency.
+Injection ?
+Dependency ?
+-------------------
+
+
+
+interface Engine{
+ //some functionality and variable 
+}
+
+
+@Component
+Class HondaEngine implements Engine{
+   //Implementation
+}
+
+Class MaruthiCar{
+      
+   Engine engine;
+   
+   MaruthiCar(){
+     this.engine = new HondaEngine();
+   }   
+}
+
+
+Class MaruthiCar{
+   
+   @Autowired   
+   Engine engine;
+   
+}
+
+-------------------------------------------------
+
+Intellij project creation:
+---------------------------
+
+
+
+Day2 Agenda:
+---------------------
+Setter Injection
+Constructor Injection
+Setter Vs constructor
+
+@Required
+@Value 
+
+Places where we can Autowire objects.
+We can inject object keeping autowire over class variable.
+We can inject object  keeping autowire over Constructor.
+We can inject object  keeping autowire over Setter.
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
